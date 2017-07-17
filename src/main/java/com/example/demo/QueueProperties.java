@@ -10,17 +10,17 @@ import java.util.Optional;
 @Component
 public class QueueProperties {
 
-    private Map<String, Object> queueConfig;
+    private Map<String, Map<String, Object>> queueConfig;
 
-    public Optional<Map<String, Object>> queueConfig() {
+    public Optional<Map<String, Map<String, Object>>> queueConfig() {
         return Optional.ofNullable(queueConfig);
     }
 
-    public Map<String, Object> getQueueConfig() {
+    public Map<String, Map<String, Object>> getQueueConfig() {
         return queueConfig;
     }
 
-    public void setQueueConfig(Map<String, Object> queueConfig) {
+    public void setQueueConfig(Map<String, Map<String, Object>> queueConfig) {
         this.queueConfig = queueConfig;
     }
 
