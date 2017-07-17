@@ -1,0 +1,16 @@
+spring:
+  jmx.enabled: false
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    max:
+      concurrent:
+        consumers: 1
+    queueConfig:
+      testqueue:
+        x-message-ttl: 0
+      default:
+        x-message-ttl: 28800000
+        x-expires: 28800000
